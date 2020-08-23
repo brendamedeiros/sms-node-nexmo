@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title #{title}
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css')
+    body
+        .container
+            h1 Send SMS Message
+            input#number(type='tel' name='number' placeholder='Enter Phone Number...')
+            input#msg(type='text' name='msg' placeholder='Enter Text Message...')
+            input#button.button.button-primary(type='button' value='Send Text')
+            p.response
+
+        script(src='/socket.io/socket.io.js')
+        script(src='/js/bundle.js')
